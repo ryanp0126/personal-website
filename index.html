@@ -28,13 +28,22 @@
         </header>
     </div>
     <main>
+
         <span lang="ja">こんにちは、世界</span>
         <h1>Ryan's Website</h1> 
         <p>Hi! I'm a student majoring in <strong>Computer Engineering</strong> in the <i>ECE</i> department at UCSD. This is my <em>personal</em> website.</p>
-        <b>My fav bear</b>
-        <section class="img">
-            <img src="images/bear.png" alt="Warren Bear" height="430" width="700" />
+        <section id="Links">
+            <h2>Useful Links</h2>
+            <a href="http://canvas.ucsd.edu">Canvas</a>
         </section>
+        <h2>My fav song</h2>
+        <audio controls>
+            <source src="gymnopedie.mp3" type="audio/mp3">
+        </audio>
+        <b>My fav bear</b>
+        <div class="img">
+            <img src="images/bear.png" alt="Warren Bear" height="430" width="700" />
+        </div>
         <section class="video">
             <h2>vid about UCSD</h2>
             <video controls height="393" width="700">
@@ -55,13 +64,29 @@
         </section>
         <section id="projects">
             <h2>Projects</h2>
+            <summary>Summary of my <code>projects</code></summary>
             <ol>
                 <li>Social Compass</li>
                 <li>AI for games</li>
             </ol>
+
             
         </section>
     </main>
+
+    <table>
+        <caption>
+            <pre>table for fun</pre>
+        </caption>
+        <tr>
+            <th>hello</th>
+            <th>bye</th>
+        </tr>
+        <tr>
+            <td>hi</td>
+            <td>bye</td>
+        </tr>
+    </table>
 
     <form>
         <fieldset>
@@ -88,7 +113,14 @@
                 <option value="Europe"></option>
             </datalist>
             <input list="Continents" id="Continent">
+            <br />
+            <label for="sample-text-area">Have feedback?</label>
+            <br />
+            <textarea id="sample-text-area">Feedback here</textarea>
+            <br />
+            <button type="submit">Submit</button>
         </fieldset>
+        
     </form>
 	<script src="index.js"></script>
 
