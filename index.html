@@ -9,8 +9,6 @@
     <title>Ryan's Website</title>
     <link href="images/favicon.ico" rel="icon" />
 	<link href="styles/main.css" rel="stylesheet" />
-    <script>
-    </script>
   </head>
   <body>
     <div id = "layout">
@@ -28,10 +26,18 @@
         </header>
     </div>
     <main>
-
+        <svg></svg>
         <span lang="ja">こんにちは、世界</span>
         <h1>Ryan's Website</h1> 
+        <style>
+            p {
+                border: 1px solid black;
+            }
+        </style>
         <p>Hi! I'm a student majoring in <strong>Computer Engineering</strong> in the <i>ECE</i> department at UCSD. This is my <em>personal</em> website.</p>
+        <aside>
+            <p>Lookin for a job</p>
+        </aside>
         <section id="Links">
             <h2>Useful Links</h2>
             <a href="http://canvas.ucsd.edu">Canvas</a>
@@ -42,8 +48,14 @@
         </audio>
         <b>My fav bear</b>
         <div class="img">
-            <img src="images/bear.png" alt="Warren Bear" height="430" width="700" />
+            <picture>
+                <img src="images/bear.png" alt="Warren Bear" height="430" width="700" />
+            </picture>
         </div>
+        <figure>
+            <img src="images/triton.jpg" alt="Triton guy" height="430" width="700">
+            <figcaption>Triton guy</figcaption>
+        </figure>
         <section class="video">
             <h2>vid about UCSD</h2>
             <video controls height="393" width="700">
@@ -51,17 +63,29 @@
 				<div class="error">Your browser does not support the video tag.</div>
 			</video>
         </section>
+        <iframe></iframe>
+        <canvas id="myCanvas">
+            Your browser does not support the canvas tag.
+            </canvas>
+            
+            <script>
+            let canvas = document.getElementById("myCanvas");
+            let ctx = canvas.getContext("2d");
+            ctx.fillStyle = "#FF0000";
+            ctx.fillRect(0, 0, 80, 80);
+            </script>
         <section id="Posts">
             <h2>Latest Posts</h2>
             <ol>
                 <li>Article1</li>
                 <li>Article2</li>
             </ol>
-            <details>
-                <summary>Why are there no articles?</summary>
-                The articles are not written yet.
-            </details>
+            
         </section>
+        <details>
+            <summary>Why are there no articles?</summary>
+            The articles are not written yet.
+        </details>
         <section id="projects">
             <h2>Projects</h2>
             <summary>Summary of my <code>projects</code></summary>
@@ -78,6 +102,10 @@
         <caption>
             <pre>table for fun</pre>
         </caption>
+        <colgroup>
+            <col/>
+            <col span="2" class="funny"/>
+        </colgroup>
         <tr>
             <th>hello</th>
             <th>bye</th>
@@ -87,6 +115,12 @@
             <td>bye</td>
         </tr>
     </table>
+
+    <template id="tablerow">
+        <tr>
+            <td class="data"></td>
+        </tr>
+    </template>
 
     <form>
         <fieldset>
