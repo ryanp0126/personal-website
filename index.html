@@ -9,6 +9,11 @@
     <title>Ryan's Website</title>
     <link href="images/favicon.ico" rel="icon" />
 	<link href="styles/main.css" rel="stylesheet" />
+    <style>
+        p {
+            border: 1px solid black;
+        }
+    </style>
   </head>
   <body>
     <div id = "layout">
@@ -29,11 +34,6 @@
         <svg></svg>
         <span lang="ja">こんにちは、世界</span>
         <h1>Ryan's Website</h1> 
-        <style>
-            p {
-                border: 1px solid black;
-            }
-        </style>
         <p>Hi! I'm a student majoring in <strong>Computer Engineering</strong> in the <i>ECE</i> department at UCSD. This is my <em>personal</em> website.</p>
         <aside>
             <p>Lookin for a job</p>
@@ -88,7 +88,7 @@
         </details>
         <section id="projects">
             <h2>Projects</h2>
-            <summary>Summary of my <code>projects</code></summary>
+            <p>Summary of my <code>projects</code></p>
             <ol>
                 <li>Social Compass</li>
                 <li>AI for games</li>
@@ -103,8 +103,7 @@
             <pre>table for fun</pre>
         </caption>
         <colgroup>
-            <col/>
-            <col span="2" class="funny"/>
+            <col>
         </colgroup>
         <tr>
             <th>hello</th>
@@ -137,7 +136,7 @@
                 </optgroup>
 
             </select>
-            <br />
+            <br>
             <label for="Continent">Select your Continent:</label>
             <datalist id="Continents">
                 <option value="Asia">
@@ -147,11 +146,11 @@
                 <option value="Europe"></option>
             </datalist>
             <input list="Continents" id="Continent">
-            <br />
+            <br>
             <label for="sample-text-area">Have feedback?</label>
-            <br />
+            <br>
             <textarea id="sample-text-area">Feedback here</textarea>
-            <br />
+            <br>
             <button type="submit">Submit</button>
         </fieldset>
         
